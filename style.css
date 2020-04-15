@@ -9,8 +9,10 @@
 }
 
 #nav{
-  background-color:blue;
+  background-color:rgb(132, 180, 178);
   margin:0px; 
+  height: 50px;
+  padding-top: 15px;
   
 }
 .select-css {
@@ -63,6 +65,9 @@
 
 body{
   margin: 0; 
+  background-image:url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/05/20152251/Dorado-Beach-a-Ritz-Carlton-Reserve-3.jpg");
+  background-size: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 div.losa{
@@ -75,9 +80,9 @@ div.losa{
 a{
   margin-left: 20px;
   text-decoration: none;
-  color:white;
-  font-family:helvetica;
-  font-size:20px
+  color:white; 
+  font-size:20px;
+  
 }
 
 ul {
@@ -98,3 +103,12 @@ ul li ul li {
   display: block; 
 }
 ul li ul li a {display:block !important;} 
+
+#footer {
+  background-color:rgb(132, 180, 178);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100% 
+}
