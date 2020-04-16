@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+    <!-- <script type="text/javascript">
+      function login() {
+        var form = document.form;
+        var user = form.numuser.value;
+        var pass = form.contrauser.value;
+
+        if (user == "alex" && pass == "1234" ) {
+          alert("Bienvenido Alex");
+        }else {
+          alert("Este usuario no existe");
+        }
+      }
+    </script>
+    -->
+
+    <style media="screen">
+      * {
+          box-sizing: border-box;
+        }
+        body {
+          background: #333;
+          color: white;
+          font-family: sans-serif;
+        }
+
+        form {
+          width: 500px;
+          margin: auto;
+          background: #555;
+          padding: 20px;
+          margin-top: 20px;
+        }
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+          margin-top: 0;
+        }
+        input {
+          width: 100%;
+          display: block;
+          font-size: 1.2em;
+        }
+        input {
+          padding: 5px;
+          margin-bottom: 20px;
+        }
+        button {
+          width: 30%;
+          margin: auto;
+          background: #333;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1> Hotellege  </h1>
+    <form name"form" action="#" method="POST">
+      <label for="Nom-login">Nombre de Usuario:</label>
+      <input type="text" name="nomuser" id="Nom-login" value="" required>
+      <br>
+      <label for="contraseña-login">Contraseña:</label>
+      <input type="password" name="contrauser" id="contraseña-login" value="" required>
+      <br>
+      <button onclick="login();">Entrar</button>
+      <a href="Registro.html">Registrate</a>
+    </form>
+  </body>
+</html>
