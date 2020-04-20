@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title></title>
     
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       function login() {
-        var form = document.form;
-        var user = form.numuser.value;
-        var pass = form.contrauser.value;
+        var user = document.getElementById('Nom-login').value;
+        var pass = document.getElementById('contraseña-login').value;
 
         if (user == "alex" && pass == "1234" ) {
           alert("Bienvenido Alex");
@@ -17,7 +16,6 @@
         }
       }
     </script>
-    -->
 
     <style media="screen">
       * {
@@ -71,7 +69,6 @@
       <input type="password" name="contrauser" id="contraseña-login" value="" required>
       <br>
       <button onclick="login();">Entrar</button>
-      <a href="Registro.html">Registrate</a>
     </form>
   </body>
 </html>
