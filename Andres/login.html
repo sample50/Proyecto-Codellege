@@ -3,18 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script type="text/javascript">
       function login() {
-        var user = document.getElementById('Nom-login').value;
-        var pass = document.getElementById('contraseña-login').value;
+  var user = document.getElementById('Nom-login').value;
+  var pass = document.getElementById('contraseña-login').value;
 
-        if (user == "alex" && pass == "1234" ) {
-          alert("Bienvenido Alex");
-        }else {
-          alert("Este usuario no existe");
-        }
-      }
+  if (user == 'alex' && pass == '1234' ) {
+    swal.fire({
+      title: 'Bienvenido!',
+      icon: 'success',
+    });
+  } else {
+    swal.fire({
+      title: 'Este Usuario no Existe',
+      icon: 'Error',
+    });
+  }
+}
+
     </script>
 
     <style media="screen">
