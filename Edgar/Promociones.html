@@ -202,6 +202,109 @@ h1 {
 a {
  color:black;
 }
+.footer {
+  background-color:rgb(180, 173, 173);
+  height: auto;
+  width: 100%;
+  margin-bottom:0;
+  text-align: center;
+  padding-top: 15px;
+  
+
+}
+
+div.footer img{
+  width: 30px;
+  
+}
+
+div.credits{
+  background-color: rgb(0, 0, 0);
+  width:100%;
+  
+  
+}
+
+.slider{
+    overflow:hidden;
+
+
+}
+.slider ul {
+                display:flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+                animation-timing-function:ease-out;
+            }
+            
+            .slider li{
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+            width: 35%;
+            }
+            
+            @keyframes cambio {
+                0%{ margin-left:0;}
+                20%{ margin-left:0;}
+                
+                25%{ margin-left:-100%;}
+                45%{ margin-left:-100%;}
+                
+                50%{ margin-left:-200%;}
+                70%{ margin-left:-200%;}
+                
+                75%{ margin-left:-300%;}
+                100%{ margin-left:-300%;}
+                
+                  }
+.contacto{
+  border: 3px solid gray;
+  width: 370px;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px;
+  
+}
+
+div.contacto h1{
+  text-align: center;
+
+}
+
+.three{
+  width: auto;
+  float: left;
+
+  margin: 5px 5px 5px 5px;
+
+}
+
+div.contacto input{
+  border-radius: 5px;
+  padding-left: 5px;  
+  height:20px;
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+div.contacto textarea{
+  border-radius: 5px;
+  margin-right: 50%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+div.contacto button{
+  border-radius: 5px;
+  margin-right: 50%;
+}
+
 </style>
 </head>
 <body>
@@ -210,12 +313,13 @@ a {
         <a href="index.html" style="font-size: 30px; margin-top:-10px;"> Hotellege </a>
 
         <div class="lasa">
+          <a href="Edgar/Eventos.html" class="elhover"> Eventos </a>
 
-          <a href="#" class="elhover"> Puestos Laborales </a>
+          <a href="Edgar/Promociones.html" class="elhover"> Promociones </a>
 
-          <a href="#" class="elhover"> Promociones </a>
+          <a href="Edgar/Puestoslaborales.html" class="elhover"> Puestos Laborales </a>
 
-          <a href="#" class="elhover"> Eventos </a>
+          <a href="login.html" id="login"> Login </a>
 
           <ul>
             <li>
@@ -227,6 +331,7 @@ a {
                 <li><a href="canada.html">Canadá</a></li>
               </ul>
             </li>
+          </ul>
   </div>
   <div>
     <h1>Hospedate con las promociones de Hotellege<h1>
@@ -257,7 +362,48 @@ a {
   </div>
 <div>
  <img src="https://www.viajeselcorteingles.es/imagenes/locations/1395936022701_Moscu.jpg"  width=300px>
- <a style="float:right">Ven por las mejores promociones soloy hoy en Hotellege en cualquier Hotel de Rusia afiliado a nosotros tendras tan solo %30 de descuento aprovecha hoy y aparta tu hospedaje</a>
+ <a style="margin-bottom:10px;">Ven por las mejores promociones soloy hoy en Hotellege en cualquier Hotel de Rusia afiliado a nosotros tendras tan solo %30 de descuento aprovecha hoy y aparta tu hospedaje</a>
   </div>
-</body>
+<div class="contacto">
+
+      <h1> CONTACTANOS </h1>
+
+      <form>
+
+        <div class="three">
+          <input type="text" name="name" id="name" placeholder="Nombre"> <p></p>
+          <input type="email" name="email" id="email" placeholder="Correo"> <p></p>
+          <input type="text" name="tel" id="tel" placeholder="Telefono"> <p></p>
+        </div>
+
+        <div class="three">
+          <textarea placeholder="Escribe algo..." rows="7" id="comment"></textarea> <br>
+        </div>
+            
+        
+
+      </form>
+          <button onclick="myFunction()">Click me</button>
+    </div>
+
+
+    <div class="footer">
+
+      <a href="https://www.facebook.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/23/23660.png"> </a>
+
+      <a href="https://twitter.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/23/23681.png"> </a>
+
+      <a href="https://www.youtube.comr" target="_blank"> <img src="https://image.flaticon.com/icons/svg/1077/1077046.svg"> </a>
+
+      <a href="https://www.instagram.com" target="_blank"> <img src="https://image.flaticon.com/icons/svg/1384/1384031.svg"> </a>
+
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="https://collegeforadultlearning.edu.au/wp-content/uploads/gmail.png"> </a> <p><p> 
+       
+      <div class="credits">
+        
+        <a href="#">Hotellege 2020 Copyright: </a> 
+
+      </div>         
+    </div>   
+  </body>                        
 </html>  

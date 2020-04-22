@@ -102,6 +102,7 @@ div.quest input{
   margin-bottom:0;
   text-align: center;
   padding-top: 15px;
+  
 
 }
 
@@ -112,6 +113,9 @@ div.footer img{
 
 div.credits{
   background-color: rgb(0, 0, 0);
+  width:100%;
+  
+  
 }
 
 .slider{
@@ -133,7 +137,7 @@ div.credits{
             }
             
             .slider img {
-            width: 25%;
+            width: 35%;
             }
             
             @keyframes cambio {
@@ -183,17 +187,20 @@ div.contacto h1{
 
 div.contacto input{
   border-radius: 5px;
-  padding-left: 5px;  height:20px;
-}
+  padding-left: 5px;  
+  height:20px;
+  font-family: 'Courier New', Courier, monospace;
+  }
 
 div.contacto textarea{
   border-radius: 5px;
-  
+  margin-right: 50%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 div.contacto button{
   border-radius: 5px;
-  
+  margin-right: 50%;
 }
 
 
@@ -210,7 +217,7 @@ div.contacto button{
 
 .Per{
     margin-left: 50px;
-    width: 20vw;
+    width: 19vw;
     height: 350px;
     border: 1px solid rgb(255, 255, 255);
     float: left;
@@ -296,3 +303,11 @@ div.linea{
   padding: .4em 1.4em .3em .4em;
 } */
 
+body{
+  padding: 0%;
+  margin: 0%;
+}
+.fondo{
+  background-image: url(plantilla.jpg);
+
+}

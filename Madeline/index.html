@@ -36,7 +36,7 @@
 
           <a href="Edgar/Puestoslaborales.html" class="elhover"> Puestos Laborales </a>
 
-          <a href="Andres/login.html" id="login"> Login </a>
+          <a href="login.html" id="login"> Login </a>
 
         </div>
 
@@ -80,7 +80,7 @@
           </form>
 
           <tr>
-            <td colspan="3" style="text-align:center;"><input type="submit" value="BUSCAR"></td>
+            <td colspan="3" style="text-align:center;"><button onclick="myFunction2()">BUSCAR</button></td>
           </tr>
 
         </table>
@@ -180,10 +180,10 @@
           <textarea placeholder="Escribe algo..." rows="7" id="comment"></textarea> <br>
         </div>
             
-        <button onclick="myFunction()">Click me</button>
+        
 
       </form>
-          
+          <button onclick="myFunction()">Click me</button>
     </div>
 
 
@@ -209,11 +209,27 @@
 
     </div>                                                     
     
-                                                                                                                                                   
+                                                                                                                                                  
     
 
     
   </body>
+
+  <script>
+
+    function myFunction() {
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var tel = document.getElementById("tel").value;
+    var comm = document.getElementById("comment").value;
+
+    console.log(name,email,tel,comm);
+
+    }
+
+ 
+  </script>
 
   
 </html>
