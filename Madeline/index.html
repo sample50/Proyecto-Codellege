@@ -36,7 +36,7 @@
 
           <a href="Edgar/Puestoslaborales.html" class="elhover"> Puestos Laborales </a>
 
-          <a href="login.html" id="login"> Login </a>
+          <a href="Andres/login.html" id="login"> Login </a>
 
         </div>
 
@@ -224,7 +224,9 @@
     var tel = document.getElementById("tel").value;
     var comm = document.getElementById("comment").value;
 
-    console.log(name,email,tel,comm);
+    var myObject = {name: name, email: email, telefono: tel, comentarios: comm};
+
+    console.log(myObject);
 
     }
 
