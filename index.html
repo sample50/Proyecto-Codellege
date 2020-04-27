@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotellege</title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="body">
+      <div id="nav">
+
+          <a href="index.html" style="font-size: 30px; margin-top:-10px;"> Hotellege </a>
+
+          <div class="lasa">
+
+            <ul>
+              <li>
+                <a href="#" style="width:100px;">Instalaciones</a>
+                <ul class="rep">
+                  <li><a href="japon.html">Japon</a></li>
+                  <li><a href="nuevazelanda.html">Nueva Zelanda</a></li>
+                  <li><a href="rusia.html">Rusia</a></li>
+                  <li><a href="canada.html">Canadá</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a href="Eventos.html" class="elhover"> Eventos </a>
+
+            <a href="Promociones.html" class="elhover"> Promociones </a>
+
+            <a href="Puestoslaborales.html" class="elhover"> Puestos Laborales </a>
+
+            <div class="Usuarioo">
+                  <button onclick="Usuarioo()" value="1" id="Usuarioo" class="BotonDelLogin">Iniciar sesión</button>
+                  <button onclick="Perfil()" value="1" id="BotonDeUsuario" class="BotonDeUsuario">
+                      <img class="imagenusuario" src="https://www.osi.es/sites/default/files/imagen-decorativa-del-post-cuentas-usuario-windows.png" alt="" id="BotonDeImg">
+                      <div id="TextoDelBoton">Alex</div>
+                  </button>
+              </div>
+             <div class="IniciarSesion">
+
+                 <div class="TituloUsuario">👤Usuario:</div>
+                 <input type="text" id="NombreDeUsuario" maxlength="4" placeholder="Ejemplo: Luis">
+                 <div class="AlertasEnELUsuario">
+                     <p id="AlertasEnELUsuario">Escribe el nombre de usuario</p>
+                  </div>
+
+                 <div class="TituloContrasena">🔐Contraseña:</div>
+                 <input type="password" id="Contrasena" maxlength="4" placeholder="Ejemplo: 3670">
+                 <div class="AlertasDeContrasena">
+                     <p id="AlertasDeContrasena">Escribe la Contraseña</p>
+                  </div>
+
+
+                 <button onclick="IniciarSesion()" class="EnviarA" id="EnviarA">Ingresar</button>
+             </div>
+             <div class="Perfil">
+              <div>
+                  <img class="ImagenDelPerfil"src="https://www.osi.es/sites/default/files/imagen-decorativa-del-post-cuentas-usuario-windows.png" alt="">
+              </div>
+              <div class="PerfilDos">
+                  <div class="PerfilDeNomUsuario">👤Usuario: Alex</div>
+                  <button class="CerrarSesion" onclick="CerrarSesion()" id="CerrarSesion">Cerrar sesión</button>
+
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+
+      <!-- IMAGEN CON SELECT -->
+
+    <div class="slogan">
+
+      <hr>
+
+        <div class="quest">
+          <table>
+            <form>
+
+              <tr>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Lugar</th>
+              </tr>
+
+              <tr>
+
+              <td> <input class="select-css" type="date"> </td>
+
+              <td> <input class="select-css" type="date"> </td>
+
+              <td>
+                <select class="select-css">
+                  <option value="0">Escoge tu destino </option>
+                  <option value="1">Japón </option>
+                  <option value="2">Canadá </option>
+                  <option value="3">Nueva Zelanda </option>
+                  <option value="4">Rusia </option>
+                </select>
+              </td>
+
+              </tr>
+
+            </form>
+
+            <tr>
+              <td colspan="3" style="text-align:center;"><button onclick="myFunction2()">BUSCAR</button></td>
+            </tr>
+
+          </table>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!--promociones -->
+
+      <div id="prom">
+
+          <div class="Per">
+
+            <h3>Rusia</h3>
+            <img src="https://cdni.rbth.com/rbthmedia/images/web/es-rbth/images/2013-10/big/hotelbout_1_468.jpg" alt="Rusia" class="miima">
+            <p>¡Precios increíbles y sin cargos! Reserva tu Hotel en Rusia online. Hablamos tu idioma. Confirmación inmediata. </p>
+
+          </div>
+
+          <div class="linea"></div>
+
+          <div class="Per">
+
+            <h3>Japón</h3>
+            <img src="https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/07/07/Recortada/img_mbigas_20170707-122423_imagenes_lv_terceros_onsenriokan-kzLI-U423946436941t5H-992x558@LaVanguardia-Web.jpg" alt="japon" class="miima">
+            <p>Reserva un Hotel en Tokio, Japón. Al Mejor Precio. Paga en el hotel. Villas. Cancelación gratuita. </p>
+
+          </div>
+
+          <div class="linea"></div>
+
+          <div class="Per">
+
+            <h3>Canadá</h3>
+            <img src="https://www.absolutviajes.com/wp-content/uploads/2016/01/Ritz_Montreal.jpg" alt="Canada" class="miima">
+            <p>Ahorra hasta un 50% en tu reservación. ¡Reserva tu Hotel en Canadá online! Hoteles Baratos. Reserva segura. </p>
+
+          </div>
+
+          <div class="linea"></div>
+
+          <div class="Per">
+
+            <h3>Nuva Zelanda</h3>
+            <img src="https://loff.it/wp-content/uploads/2013/10/loffit_a-la-orilla-del-wakatipu_06.jpg" class="miima">
+            <p>En Nueva Zelanda, hay hoteles de todos los tamaños, formas y personalidades. Desde económicos a lujosos, hay cientos de hoteles para elegir en todo el país </p>
+
+          </div>
+
+      </div>
+
+      <hr>
+
+
+      <!-- No sé para que lo ocuparemos así que lo pondré en comentario
+
+      <div id="buscador">
+
+          <table>
+
+            <tr>
+              <td><p1 class="letra">Vuelos</p1></td>
+            </tr>
+
+            <tr>
+              <td><select class="select-css">
+                  <option>Ida</option>
+                  <option>Ida y Vuelta</option>
+                </select>
+              </td>
+            </tr>
+
+          </table>
+      </div>
+
+    -->
+
+
+
+
+      <div class="contacto">
+
+        <h1> CONTACTANOS </h1>
+
+        <form>
+
+          <div class="three">
+            <input type="text" name="name" id="name" placeholder="Nombre"> <p></p>
+            <input type="email" name="email" id="email" placeholder="Correo"> <p></p>
+            <input type="text" name="tel" id="tel" placeholder="Telefono"> <p></p>
+          </div>
+
+          <div class="three">
+            <textarea placeholder="Escribe algo..." rows="7" id="comment"></textarea> <br>
+          </div>
+
+
+
+        </form>
+            <button onclick="myFunction()">Click me</button>
+      </div>
+
+
+      <div class="footer">
+
+        <a href="https://www.facebook.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/23/23660.png"> </a>
+
+        <a href="https://twitter.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/23/23681.png"> </a>
+
+        <a href="https://www.youtube.comr" target="_blank"> <img src="https://image.flaticon.com/icons/svg/1077/1077046.svg"> </a>
+
+        <a href="https://www.instagram.com" target="_blank"> <img src="https://image.flaticon.com/icons/svg/1384/1384031.svg"> </a>
+
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="https://collegeforadultlearning.edu.au/wp-content/uploads/gmail.png"> </a> <p><p>
+
+        <div class="credits">
+
+          <a href="#">Hotellege 2020 Copyright: </a>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+    </body>
+
+
+
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css">
+</html>
